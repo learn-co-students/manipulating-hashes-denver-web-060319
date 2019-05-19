@@ -12,11 +12,11 @@ def first_challenge
       favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
   }
-
-  #your code here
-
-
-  #remember to return your newly altered contacts hash!
+  contacts["Freddy Mercury"].each do |k,n|
+    if k == :favorite_icecream_flavors
+      n.delete_if {|i| i.include? "strawberry"}
+    end
+  end
   contacts
 end
 
