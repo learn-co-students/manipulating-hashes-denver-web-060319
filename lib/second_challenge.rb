@@ -7,7 +7,14 @@ def second_challenge
   }
 
   #code your solution here!
+  flat_array = []
+  groceries.each do |foo_cat, foo_item|
+    foo_item.each do |value|
+      flat_array << value
+    end
+  end
 
+  flat_array
   
 
 end
