@@ -1,4 +1,5 @@
 def second_challenge
+  list = []
   groceries = {
    dairy: ["milk", "yogurt", "cheese"],
    vegetable: ["carrots", "broccoli", "cucumbers"],
@@ -7,7 +8,8 @@ def second_challenge
   }
 
   #code your solution here!
-
-  
-
+#  groceries.each do |type, item|
+    
+list = groceries.values
+final = list.flatten
 end
